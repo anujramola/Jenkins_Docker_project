@@ -11,9 +11,9 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                    sh pip install -r Docker_Pipeline/requirements.txt
-                    }
+                sh pip install -r Docker_Pipeline/requirements.txt
             }
+         }
         stage('Test') {
             steps {
                 sh pytest
