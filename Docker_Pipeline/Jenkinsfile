@@ -15,6 +15,7 @@ pipeline {
                  sh '''
                     python3 -m venv venv
                     . venv/bin/activate
+                    ls -la Docker_Pipeline
                     pip install -r Docker_Pipeline/requirements.txt
                 '''
             }
