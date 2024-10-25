@@ -12,7 +12,6 @@ pipeline {
 
         stage('Setup') {
             steps {
-                 sh '''
                     sh '''
                         echo "Current directory:"
                         pwd
@@ -22,6 +21,7 @@ pipeline {
                         cat Understanding_JENKINS/Docker_Pipeline/requirements.txt
                         pip install -r Understanding_JENKINS/Docker_Pipeline/requirements.txt
                     '''
+                    }
             }
         }
         stage('Test') {
