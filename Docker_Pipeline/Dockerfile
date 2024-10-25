@@ -1,5 +1,5 @@
 FROM python:3.12.0b3-alpine3.18
-COPY . /application
+COPY Docker_Pipeline /application
 WORKDIR /application
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
