@@ -40,7 +40,7 @@ pipeline {
         {
             steps
             {
-                sh 'docker build -t ${IMAGE_TAG} -f Docker_Pipeline/Dockerfile .s'
+                sh 'docker build -t ${IMAGE_TAG} -f Docker_Pipeline/Dockerfile .'
                 echo "Docker image build successfully"
                 sh 'docker image ls'
                 
