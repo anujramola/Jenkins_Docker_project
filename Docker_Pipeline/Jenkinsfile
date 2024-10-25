@@ -17,8 +17,8 @@ pipeline {
                         echo "Files in Docker_Pipeline:"
                         ls -la Docker_Pipeline
                         echo "Contents of requirements.txt:"
-                        cat Understanding_JENKINS/Docker_Pipeline/requirements.txt
-                        pip install -r Understanding_JENKINS/Docker_Pipeline/requirements.txt
+                        cat Docker_Pipeline/requirements.txt
+                        pip install -r Docker_Pipeline/requirements.txt
                     '''
                     }
             }
