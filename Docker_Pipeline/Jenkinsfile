@@ -11,23 +11,12 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                    sh '''
-                        echo "Current directory:"
-                        pwd
-                        echo "Files in Docker_Pipeline:"
-                        ls -la Docker_Pipeline
-                        echo "Contents of requirements.txt:"
-                        cat Docker_Pipeline/requirements.txt
-                        pip install -r Docker_Pipeline/requirements.txt
-                    '''
+                    sh pip install -r Docker_Pipeline/requirements.txt
                     }
             }
         stage('Test') {
             steps {
-                sh '''
-                    . venv/bin/activate
-                    pytest
-                '''
+                sh pytest
             }
         }
 
