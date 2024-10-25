@@ -13,11 +13,15 @@ pipeline {
         stage('Setup') {
             steps {
                  sh '''
-                    python3 -m venv venv
-                    . venv/bin/activate
-                    ls -la Docker_Pipeline
-                    pip install -r Docker_Pipeline/requirements.txt
-                '''
+                    sh '''
+                        echo "Current directory:"
+                        pwd
+                        echo "Files in Docker_Pipeline:"
+                        ls -la Docker_Pipeline
+                        echo "Contents of requirements.txt:"
+                        cat Understanding_JENKINS/Docker_Pipeline/requirements.txt
+                        pip install -r Understanding_JENKINS/Docker_Pipeline/requirements.txt
+                    '''
             }
         }
         stage('Test') {
