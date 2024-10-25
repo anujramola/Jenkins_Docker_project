@@ -1,7 +1,14 @@
 FROM python:3.12.0b3-alpine3.18
-COPY Docker_Pipeline /application
+
+# Set the working directory
 WORKDIR /application
-COPY requirements.txt .
+
+# Copy everything from the current context (the Docker_Pipeline directory) to /application
+COPY . .
+
+# Install the requirements
 RUN pip install --no-cache-dir -r requirements.txt
+
 EXPOSE 8080
+
 CMD ["python", "app.py"]
