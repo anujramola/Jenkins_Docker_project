@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh pip install -r Docker_Pipeline/requirements.txt
             }
-         }
+        }
         stage('Test') {
             steps {
                 sh pytest
