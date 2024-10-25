@@ -1,7 +1,5 @@
-Here's a comprehensive installation guide that you can include in your `README.md` file for your project. This guide covers the installation of necessary software, configuration steps, and any prerequisites needed for setting up Jenkins with Docker and Python.
+This guide covers the installation of necessary software, configuration steps, and any prerequisites needed for setting up Jenkins with Docker and Python.
 
-```markdown
-# Installation Guide
 
 ## Prerequisites
 
