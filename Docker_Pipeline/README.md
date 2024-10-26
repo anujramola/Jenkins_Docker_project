@@ -140,3 +140,21 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ***Application Interface***
 ![alt text](Output_screenshots/ToDo_GUI.png)
+
+***THE JENKINS PART:***
+Login to jenkins server in my case I am running it as EC2 instance here's the Screen:
+![alt text](Output_screenshots/Jenkins_EC2.png)
+
+Grab the public IP of your instance and run it on port number 8080(by default port number).
+Also make sure that security groups are configured to have inbound traffic rule for port number 8080.
+![alt text](Output_screenshots/Jenkins_GUI.png)
+
+The user name is admin and password can be retrieved from the steps given above.
+***Jenkins Pipeline stages***
+![alt text](Output_screenshots/Pipeline_stages.png)
+
+***Docker hub repository with successfull build and push image***
+![alt text](Output_screenshots/Dockerhub_repository.png)
+
+***Docker images using CLI:***
+![alt text](Output_screenshots/Docker_CLI.png)
