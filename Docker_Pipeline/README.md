@@ -135,4 +135,8 @@ pip install -r requirements.txt
 ```bash
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
+***Locally Testing the application***
+![alt text](GUI_Console.png)
 
+***Application Interface***
+![alt text](ToDo_GUI.png)
